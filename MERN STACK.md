@@ -75,7 +75,25 @@ For security reasons users do not connect to MongoDB from inside our react appli
 
 ![image-20230803224815815](C:\Users\achin\AppData\Roaming\Typora\typora-user-images\image-20230803224815815.png)
 
-The client and the server communicate through requests and responses which are called http requests. All these communications take place in json data format.
+## Client (browser)
 
+React.js is used to build our frontend facing web application. It's there to render something onto the screen and re-render it whenever something changes, update the UI and provide great user experience to our end users. React is responsible for what users see in the end.
 
+#### Why is Reactjs not enough for website building-
+
+ If we only work with react we have some limitations, most importantly we're not able to execute any logic on a server, so in a place where users can't see our code, they can see it in the browser, anyone can use the browser dev tool to look into our code and in addition to running code the user can't see or running more performance intensive task which we also don't want to do in the browser, in addition to that we typically also want to store some data in a persistent storage and the browser side is not such a persistent storage.
+
+## Server side (backend)
+
+This is web application that runs on a dedicated machine, a server, somewhere in the internet reachable by anyone, so opened up to incoming internet connections and that server is created and run with the help of node.js and a node framework express.js. These two pieces are used to write javascript code that runs on a server, detached from our client. There we can run any business logic, which we might want to hide from our users or which is more performance intensive since we run it on a dedicated machine, a dedicated server, we don't rely on the machine of our users.
+
+### Connection between server side and client
+
+The server side and the client side, communicate with requests and responses, Httprequests and responses, specifically called Ajax. These are triggered from client side javascript so that they are sent to the server and the response is handled in the client without reloading the page on the client, that is achieved by exchanging data which is not a HTML page which would be rendered by the browser and which would therefore lead to a page refresh but instead which is in a  JSON format.
+
+## JSON
+
+The client and the server communicate through requests and responses which are called http requests. All these communications take place in json(javascript object notation) data format. JSON is a machine readable and also quite human readable data format which in the end is used to exchange text data, numeric data and structured data in any form. This data is attached to both requests sent from the client to the server and responses received by the client, incoming from the server to then re-render something on the client side, using React to re-render the parts of the UI or to do something on the server side if the data's received there.
+
+## Database Server
 

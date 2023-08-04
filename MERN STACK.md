@@ -97,3 +97,9 @@ The client and the server communicate through requests and responses which are c
 
 ## Database Server
 
+The database server acts as the third building block, this server can run on the same machine as our node server or completely different machine. The data base server in MongoDB is then used for the persistent data storage, not file storage, one should always store files on a system, not in a database but any other data, like the name of a product, the price of a product, the users of our web applications, things like that would be stored in a database.
+
+### Communication between database server and node server-
+
+Our node express application sends database queries using the MongoDB SDK or a MongoDB library, to that database server. We don't send requests from the client side directly to the database, because to send these queries, we need to include our database credentials, so the user name and password to log into our database.
+

@@ -69,3 +69,15 @@ The other way is to have Two separate machines for front end and the backend.
 - Node(express) API handles incoming requests.
 - React SPA served from separate static host.
 - Data is exchanged between the react app and the node API in JSON format.
+
+## Simple MERN application 
+
+For basic idea there is an sample test MERN dummy application that has been run and tested
+
+- To install node modules one has to use " npm install " in the place where the frontend code is installed as well as where the backend code is present separately.
+
+- After installing, to start the server user has to type "npm start " in both frontend and the backend folders.
+
+- when one starts the client side code it opens in the browser and shows some error those errors will automatically fixed when once the server side code is initiated using npm command (also to exit the server side code on terminal use "ctrl + c".)
+
+  

@@ -88,3 +88,15 @@ Update a place by id (pid)
 
 delete a place by id (pid)
 
+### SPA pages
+
+```mermaid
+flowchart TD
+id1("/")-->id2("List of users")-->id11("always reachable")
+id3("/:uid/places")-->id4("List of places for selected users")-->id11("always reachable")
+id5("/authenticate")-->id6("Signup +login forms")-->id13("Only un-authenticated")
+id7("/places/new")-->id8("New place form")-->id14("Only authenticated")
+id9("/places/:pid")-->id10("Update Place form")-->id14("Only authenticated")
+
+```
+

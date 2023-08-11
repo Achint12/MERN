@@ -12,8 +12,9 @@ const App = () => {
   ]);
   
   const addGoalHandler = (newGoal) => {
-    setCoureseGoals(courseGoals.concat(newGoal));
-  };
+   // setCoureseGoals(courseGoals.concat(newGoal));
+   setCoureseGoals((prevCourseGoals) => prevCourseGoals.concat(newGoal));
+  }; 
  
  return <div className='course-goals'>
     <h2>Course Goals</h2>

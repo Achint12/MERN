@@ -28,3 +28,8 @@ one cannot work on authentication right now cause that's consists of server side
 
  
 
+### Portals
+
+It's a concept in the react that allows us to project or render a react component in a different place than it normally would be rendered.
+
+### 

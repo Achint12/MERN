@@ -45,3 +45,4 @@ const MainNavigation = props => {
 };
 
 export default MainNavigation;
+//in react one must have only one root jsx element per component one can nest as many elements one wants. hence to use that one has to use <React.fragment> element.

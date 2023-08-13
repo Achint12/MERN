@@ -21,3 +21,4 @@ const NavLinks = props => {
 };
 
 export default NavLinks;
+//what exact keyword does is that it only  marks that link active when only and only / is used

@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom/cjs/react-router-dom.min";
 
 import MainHeader from "./Mainheader";
+import Navlinks from "./NavLinks";
 import './MainNavigation.css';
 const MainNavigation = props => {
     return (
@@ -15,7 +16,9 @@ const MainNavigation = props => {
            <Link to='/'> Your places </Link>
         </h1>
         <nav>
-            ...
+        <Navlinks>
+            
+        </Navlinks>
         </nav>
     </MainHeader>
     ); 

@@ -20,3 +20,11 @@ id9("/places/:pid")-->id10("Update Place form")-->id14("Only authenticated")
 
 one cannot work on authentication right now cause that's consists of server side interaction with the spa application.
 
+## Presentational  vs  Stateful Components-
+
+- Presentational components are the components that are strictly used for styling and it will dumbly just process information that is provided to that component.
+
+- Stateful components are used to present and also actively fetch data it wants to show from the backend server.
+
+ 
+

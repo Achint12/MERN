@@ -49,3 +49,7 @@ this allowed us to register state which then is managed inside of a component. W
 This also allows you to manage state in a component and it also gives you a function you can call which updated the state and re-renders the component.
 
 The difference between useState and useReducer is that  you can manage more complex state and you can write some logic that basically runs whenever you want to change the state to do more complex updates than just set a new value.
+
+### ...name of the object
+
+one uses it to copy all the data previously stored in an object so that it is not lost when updated.

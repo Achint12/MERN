@@ -44,3 +44,8 @@ It allows us to register logic, a function that should be executed when certain 
 
 this allowed us to register state which then is managed inside of a component. When state is changed, the component re-renders (or to be precise: It is re-evaluated and might lead to a re-rendering of the DOM).
 
+### UseReducer()
+
+This also allows you to manage state in a component and it also gives you a function you can call which updated the state and re-renders the component.
+
+The difference between useState and useReducer is that  you can manage more complex state and you can write some logic that basically runs whenever you want to change the state to do more complex updates than just set a new value.

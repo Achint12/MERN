@@ -3,11 +3,16 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
+    "google": "^2.1.0",
+    "map": "^1.0.1",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
+    "react-google-maps": "^9.4.5",
     "react-router-dom": "5.3.4",
     "react-scripts": "^5.0.1",
-    "react-transition-group": "^4.4.5"
+    "react-transition-group": "^4.4.5",
+    "sdk": "^0.0.8"
   },
   "scripts": {
     "start": "react-scripts start",

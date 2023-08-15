@@ -15,13 +15,13 @@ const auth =useContext(AuthContext);
    {auth.isLoggedIn && ( <li>
       <NavLink to="/u1/places">MY PLACES</NavLink>
     </li>)}
-    <li>
+    {auth.isLoggedIn && (<li>
       <NavLink to="/places/new">ADD PLACE</NavLink>
+    </li>)
+}
+    {!auth.isLoggedIn &&  <li><NavLink to="/auth">AUTHENTICATE</NavLink>
     </li>
-    <li>
-      <NavLink to="/auth">AUTHENTICATE</NavLink>
-    </li>
-  </ul>
+  }  </ul>
 };
 
 export default NavLinks;

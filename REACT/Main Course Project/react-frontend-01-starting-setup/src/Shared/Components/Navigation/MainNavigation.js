@@ -28,7 +28,10 @@ const MainNavigation = props => {
       </SideDrawer>
 
       <MainHeader>
-        <button className="main-navigation__menu-btn" onClick={openDrawerHandler}>
+        <button
+          className="main-navigation__menu-btn"
+          onClick={openDrawerHandler}
+        >
           <span />
           <span />
           <span />
@@ -45,4 +48,3 @@ const MainNavigation = props => {
 };
 
 export default MainNavigation;
-//in react one must have only one root jsx element per component one can nest as many elements one wants. hence to use that one has to use <React.fragment> element.

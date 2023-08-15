@@ -53,3 +53,7 @@ The difference between useState and useReducer is that  you can manage more comp
 ### ...name of the object
 
 one uses it to copy all the data previously stored in an object so that it is not lost when updated.
+
+### Context 
+
+It allows us to pass data between any components in our application using props, which is useful if one has some general application wide-data like the user logged in.

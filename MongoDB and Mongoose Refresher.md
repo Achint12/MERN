@@ -33,3 +33,11 @@ Secure authentication is not possible if one directly interacts with the databas
 Its a third party library and it builds up on the official mongodb driver, and its a third party library which makes up the interaction with mongodb very continent.
 
 It uses schemas and they allow you to define the structure of the documents you want to store in your database.
+
+Schemas and models allows us to create blueprints for documents stored in our database.
+
+## ID
+
+The ID gets added to the document each time we store a new document in the database. This is unique and it gets added automatically no matter if we use mongodb or mongoose. It has a specal type its an object. 
+
+- for working with these id's in javaScript one must convert these ID's into a string.  

@@ -25,3 +25,11 @@ Its a powerful database which can easily be integrated into a node/express envir
 ## Why connecting React and MongoDB is not preffered.
 
 Secure authentication is not possible if one directly interacts with the database, then it need access codes and emails one can embed it in the browser but anyone with the access to the browser has access to the credentials which is not very secure approach.
+
+
+
+## Mongoose
+
+Its a third party library and it builds up on the official mongodb driver, and its a third party library which makes up the interaction with mongodb very continent.
+
+It uses schemas and they allow you to define the structure of the documents you want to store in your database.

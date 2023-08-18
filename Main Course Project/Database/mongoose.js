@@ -13,8 +13,9 @@ const createProduct = async (req, res, next)=>{
         name: req.body.name,
         price: req.body.price
     });
-    const result= createdProduct.save();
+    const result= await createdProduct.save();
     
-}
+    res.json(result);
+};
 
 exports.createProduct = createProduct;

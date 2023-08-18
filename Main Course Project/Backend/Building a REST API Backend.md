@@ -6,6 +6,10 @@ with Node.js & Express
 
 
 
+### Nodemon 
+
+nodemon is an 
+
 ### Express 
 
 It is a node js framework and it makes node js easier. by giving you a lot of utiliy functions parsing data easier.
@@ -28,6 +32,7 @@ these are the files that hold the actual logic that should execute when a certai
 - middlewares always get parsed top to bottom.
 - If one enters something in the browser URL, it by default is a get request so if we have a post route handling that request one can use postman app.
 - Postman is simply a tool that allows you to test or send or request to API's.
+- while working with async code throw keyword will not work correctly.
 
 ### UUID package
 
@@ -37,3 +42,6 @@ UUID package is a package that is capable of generating unique ID's.
 
 express validators is a library to run various validations across our code one can also do that by adding multiple if statements to our code but this makes it easier as it contains the same logic middleware that will help us achieve the same.
 
+### axios 
+
+Its a very popular package for sending httpRequests from front end applications to backends. It can also be used on a node sever to send a request from there and that's what we are gonna use it in our project.

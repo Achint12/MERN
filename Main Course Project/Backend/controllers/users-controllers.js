@@ -15,7 +15,7 @@ const DUMMY_USER=[
 ];
 
 const getUsers = (req, res, next )=>{
-res.json({users: DUMMY_USER});
+const users = User.find();
 };
 
 const signup= async (req, res, next)=>{

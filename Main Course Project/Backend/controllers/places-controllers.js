@@ -68,9 +68,22 @@ const createPlace = async (req, res, next) => {
   }
 
   // const title = req.body.title;
-  const createdPlace = 
-  DUMMY_PLACES.push(createdPlace); //unshift(createdPlace)
-
+  const createdPlace = new Place({
+    title,
+    description,
+    address,
+    location: coordinates,
+    image:"https://www.google.com/url?sa=i&url=https%3A%2F%2Fsoundcloud.com%2Fralsei-o-principe-das-trevas%2F1-hour-of-silence-occasionally&psig=AOvVaw1SSQXURaOUeeIgtoVAc3Ci&ust=1692503685301000&source=images&cd=vfe&opi=89978449&ved=0CA4QjRxqFwoTCKjLytfp54ADFQAAAAAdAAAAABAE",
+    creator
+  });
+try{
+  await createdPlace.save();
+} catch(err){
+const error = new HttpError(
+  ' creating place failed ,please try again.',500
+);
+return next (error);
+}
   res.status(201).json({ place: createdPlace });
 };
 

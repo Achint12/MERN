@@ -1,18 +1,7 @@
-const uuid= require('uuid/v4');
 const {validationResult}= require('express-validator')
 
 const HttpError = require('../models/http-error');
 const User = require('../models/user');
-
-
-const DUMMY_USER=[
-    {
-        id:'u1',
-        name:"Achint",
-        email:"email@email.com",
-        password:'testers'
-    }
-];
 
 const getUsers = async (req, res, next )=>{
     let users
@@ -32,7 +21,7 @@ const signup= async (req, res, next)=>{
   if(!errors.isEmpty()){
     return next(new HttpError('invalid inputs passed please check your data',422)); 
   }
-const {name, email, password, places }=  req.body;
+const {name, email, password }=  req.body;
 
 let existingUser
 try{
@@ -56,7 +45,7 @@ const createdUser = new User({
     email,
     image:"https://unsplash.com/photos/I0crOZHram8",
     password,
-    places
+    places:[]
 });
 try{
     await createdUser.save();

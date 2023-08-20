@@ -34,3 +34,5 @@ id3--->id4
 in case of a big user data one can use unique keyword while declaring the type of an object this makes quering fast. 
 
 - findOne finds one document matching the criteria in the argument of out method.
+- transactions allows you to perform multiple operations in isolation of each other and to undo this. and they are build on sessions.\
+- Populate allows us to refer to a document stored in another collection and to work with data in that existing document of that other collection.
